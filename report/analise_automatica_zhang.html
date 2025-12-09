@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Acoplamento - Zhang et al. (2011)</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:Arial,sans-serif;background:#fff;color:#000;padding:20px;line-height:1.6;}
+        .container{max-width:1400px;margin:0 auto;}
+        header{border-bottom:2px solid #000;padding:20px 0;margin-bottom:30px;}
+        h1{font-size:2em;margin-bottom:5px;}
+        .subtitle{color:#666;font-size:0.95em;margin:3px 0;}
+        h2{font-size:1.5em;margin:20px 0 15px 0;border-bottom:1px solid #999;padding-bottom:8px;}
+        section{margin-bottom:30px;}
+        table{width:100%;border-collapse:collapse;margin:10px 0;background:#fff;}
+        thead tr{background:#000;color:#fff;}
+        th{padding:8px;text-align:left;font-weight:bold;border:1px solid #ccc;}
+        td{padding:6px 8px;border:1px solid #ccc;}
+        tbody tr:nth-child(even){background:#f9f9f9;}
+        tbody tr:hover{background:#f0f0f0;}
+        .metric{display:inline-block;background:#f5f5f5;padding:12px;margin:8px 15px 8px 0;border:1px solid #ccc;}
+        .metric-label{font-size:0.9em;color:#666;}
+        .metric-value{font-size:1.4em;font-weight:bold;}
+        .highlight{background:#f0f0f0;padding:10px;border-left:3px solid #000;margin:10px 0;}
+        .conclusion{background:#f5f5f5;padding:15px;border:1px solid #999;margin:15px 0;}
+        .note{font-size:0.85em;color:#666;margin:8px 0;}
+        footer{border-top:1px solid #999;padding-top:15px;margin-top:30px;color:#666;font-size:0.9em;text-align:center;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Análise de Acoplamento: Zhang et al. (2011)</h1>
+            <p class="subtitle">Entropy Model + Judgment Matrix Model</p>
+            <p class="subtitle">Gerado: 08/12/2025 23:47:46</p>
+        </header>
+        
+        <section>
+            <h2>Resumo</h2>
+            <table>
+                <tr><td><strong>Total de Funções</strong></td><td>8</td></tr>
+                <tr><td><strong>Chamadas Diretas</strong></td><td>7</td></tr>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Resultados Principais</h2>
+            <div class="metric">
+                <div class="metric-label">Entropy (H):</div>
+                <div class="metric-value">0.3536</div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Matriz de Adjacência</h2>
+            <p class="note"><strong>Linhas:</strong> função que chama | <strong>Colunas:</strong> funções chamadas</p>
+            <div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:0.75em;"><thead><tr><th style="background:#000;color:#fff;padding:6px;">Função</th><th style="background:#000;color:#fff;padding:4px;text-align:center;width:40px;">__init__</th><th style="background:#000;color:#fff;padding:4px;text-align:center;width:40px;">conectar_sub</th><th style="background:#000;color:#fff;padding:4px;text-align:center;width:40px;">get_dados</th><th style="background:#000;color:#fff;padding:4px;text-align:center;width:40px;">main</th><th style="background:#000;color:#fff;padding:4px;text-align:center;width:40px;">obter_dados_</th><th style="background:#000;color:#fff;padding:4px;text-align:center;width:40px;">obter_dados_</th><th style="background:#000;color:#fff;padding:4px;text-align:center;width:40px;">obter_dados_</th><th style="background:#000;color:#fff;padding:4px;text-align:center;width:40px;">processar_co</th></tr></thead><tbody><tr><td style="background:#f5f5f5;padding:4px;font-weight:bold;">__init__</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#e0e0e0;">-</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td></tr><tr><td style="background:#f5f5f5;padding:4px;font-weight:bold;">conectar_sub</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#e0e0e0;">-</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td></tr><tr><td style="background:#f5f5f5;padding:4px;font-weight:bold;">get_dados</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#e0e0e0;">-</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td></tr><tr><td style="background:#f5f5f5;padding:4px;font-weight:bold;">main</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#d3d3d3;font-weight:bold;">1</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#e0e0e0;">-</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#d3d3d3;font-weight:bold;">1</td></tr><tr><td style="background:#f5f5f5;padding:4px;font-weight:bold;">obter_dados_</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#d3d3d3;font-weight:bold;">1</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#e0e0e0;">-</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td></tr><tr><td style="background:#f5f5f5;padding:4px;font-weight:bold;">obter_dados_</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#d3d3d3;font-weight:bold;">1</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#e0e0e0;">-</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td></tr><tr><td style="background:#f5f5f5;padding:4px;font-weight:bold;">obter_dados_</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#d3d3d3;font-weight:bold;">1</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#e0e0e0;">-</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td></tr><tr><td style="background:#f5f5f5;padding:4px;font-weight:bold;">processar_co</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#d3d3d3;font-weight:bold;">1</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#d3d3d3;font-weight:bold;">1</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#fff;">·</td><td style="text-align:center;padding:4px;border:1px solid #ccc;background:#e0e0e0;">-</td></tr></tbody></table></div>
+        </section>
+        
+        <section>
+            <h2>Entropy Model - Detalhado</h2>
+            <table>
+                <thead><tr><th>Função</th><th>Grau (ni)</th><th>Prob. (pi)</th><th>Termo: -(ni×pi/2M)×log₁₀(ni/2M)</th></tr></thead>
+                <tbody><tr><td style="font-size:0.9em;">__init__</td><td style="text-align:center;">0</td><td style="text-align:center;">50.0%</td><td style="text-align:center;">0.0000</td></tr><tr><td style="font-size:0.9em;">conectar_subsistemas</td><td style="text-align:center;">0</td><td style="text-align:center;">50.0%</td><td style="text-align:center;">0.0000</td></tr><tr><td style="font-size:0.9em;">get_dados</td><td style="text-align:center;">0</td><td style="text-align:center;">50.0%</td><td style="text-align:center;">0.0000</td></tr><tr><td style="font-size:0.9em;">main</td><td style="text-align:center;">2</td><td style="text-align:center;">50.0%</td><td style="text-align:center;">0.0795</td></tr><tr><td style="font-size:0.9em;">obter_dados_de_a</td><td style="text-align:center;">1</td><td style="text-align:center;">50.0%</td><td style="text-align:center;">0.0648</td></tr><tr><td style="font-size:0.9em;">obter_dados_de_b</td><td style="text-align:center;">1</td><td style="text-align:center;">50.0%</td><td style="text-align:center;">0.0648</td></tr><tr><td style="font-size:0.9em;">obter_dados_de_c</td><td style="text-align:center;">1</td><td style="text-align:center;">50.0%</td><td style="text-align:center;">0.0648</td></tr><tr><td style="font-size:0.9em;">processar_com_dados_externos</td><td style="text-align:center;">2</td><td style="text-align:center;">50.0%</td><td style="text-align:center;">0.0795</td></tr></tbody>
+            </table>
+            <div class="highlight">
+                <strong>H Total = 0.3536</strong><br/>
+                <p class="note"><strong>Fórmula:</strong> H_c = -Σ (n_i × p_i) / (2M) × log₁₀(n_i / 2M)</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Interpretação</h2>
+            <div class="conclusion">
+                <p><strong>Entropy (H):</strong> Mede a complexidade da propagação de mudanças entre funções. Quanto maior H, maior o acoplamento.</p>
+             </div>
+        </section>
+        
+        <footer>
+            <p>Zhang et al. (2011). Quantitative Analysis of System Coupling. IEEE.</p>
+        </footer>
+    </div>
+</body>
+</html>
