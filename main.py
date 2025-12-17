@@ -1,14 +1,4 @@
 #!/usr/bin/env python3
-"""
-📊 ANALISADOR DE ACOPLAMENTO - DUAS METODOLOGIAS
-Zhang et al. (2011) + Dou et al. (2023) [VRM Model]
-
-MODO DE USO:
-  python main.py ./seu_projeto
-  python main.py ./seu_projeto -p       # Probabilidades personalizadas (Zhang)
-  python main.py ./seu_projeto -dou     # Manual Coefficients personalizados (Dou)
-  python main.py ./seu_projeto -p -dou  # Ambos personalizados
-"""
 
 import os
 import sys
